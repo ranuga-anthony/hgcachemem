@@ -1,0 +1,55 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hgcachemem"
+version = "0.1.1"
+description = "HGCacheMem: A robust architectural approach to improve contextual coherence and retrieval speed in agentic systems."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "Ranuga Anthony" },
+]
+keywords = [
+    "rag",
+    "knowledge-graph",
+    "semantic-cache",
+    "graph-validator",
+    "neo4j",
+    "langchain",
+    "hallucination",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "langchain-community>=0.2",
+    "langchain-core>=0.2",
+    "langchain-huggingface>=0.1",
+    "langchain-openai>=0.1",
+    "chromadb>=0.5",
+    "neo4j>=5.0",
+    "python-dotenv>=1.0",
+    "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.4",
+    "build",
+    "twine",
+]
+
+[project.urls]
+Homepage = "https://github.com/ranugaanthony/hgcachemem"
+Issues = "https://github.com/ranugaanthony/hgcachemem/issues"
