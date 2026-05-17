@@ -6,7 +6,7 @@ LLM agents often encounter a significant trade-off between retrieval speed and c
 
 HGCacheMem is a robust architecture that merges vector similarity searches with a topological **Graph Validator**. The Graph Validator checks potential cache hits against the user's active context within a knowledge graph prior to delivery.
 
-Experimental tests on the RGB Noise Robustness benchmark testbed show that HGCacheMem achieves a **contextual coherence accuracy of 97.7%**, significantly surpassing other caching alternatives and complex memory systems, with a **mean retrieval latency of 23.66 ms** — proving that structural validation can be achieved within real-time interaction thresholds.
+Experimental tests on the RGB Noise Robustness benchmark testbed show that HGCacheMem achieves a **contextual coherence accuracy of 97.7%**, significantly surpassing other caching alternatives and complex memory systems, with a **mean retrieval latency of 37.39 ms** — proving that structural validation can be achieved within real-time interaction thresholds.
 
 ## How It Works
 
@@ -35,10 +35,11 @@ Evaluated on the RGB Noise Robustness benchmark (300 cases):
 |---|---|
 | Contextual Coherence Accuracy | 97.7% |
 | Trapped (cross-context hallucination) | 0.0% |
-| Mean Retrieval Latency | 23.66 ms |
-| p50 Latency | 17.02 ms |
-| p90 Latency | 34.27 ms |
-| p95 Latency | 50.16 ms |
+| Mean Retrieval Latency | 37.39 ms |
+| p50 Latency | 26.16 ms |
+| p90 Latency | 65.42 ms |
+| p95 Latency | 91.64 ms |
+| p99 Latency | 142.88 ms|
 
 ## Installation
 
