@@ -51,5 +51,7 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/ranugaanthony/hgcachemem"
-Issues = "https://github.com/ranugaanthony/hgcachemem/issues"
+Homepage = "https://github.com/ranuga-anthony/hgcachemem"
+Repository = "https://github.com/ranuga-anthony/hgcachemem"
+Issues = "https://github.com/ranuga-anthony/hgcachemem/issues"
+
